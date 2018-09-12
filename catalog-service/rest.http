@@ -1,0 +1,11 @@
+GET localhost:8181/api/products
+
+###
+
+GET localhost:8181/api/products/P001
+
+###
+
+GET localhost:8181/api/products/P005
+
+###

@@ -1,0 +1,24 @@
+server:
+  port: 8181
+
+logging:
+  level:
+    net.brainage.example: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/catalog?useSSL=false&characterEncoding=utf8&useUnicode=true
+    username: root
+    password: admin
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# expose all the actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
