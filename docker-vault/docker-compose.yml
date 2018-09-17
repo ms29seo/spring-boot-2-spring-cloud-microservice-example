@@ -1,0 +1,9 @@
+vault:
+  image: vault
+  container_name: vault
+  cap_add:
+    - IPC_LOCK
+  environment:
+    VAULT_DEV_ROOT_TOKEN_ID: "61b7ae0c-173c-bb6d-db22-559799c0dbe6"
+  ports:
+    - 8200:8200
