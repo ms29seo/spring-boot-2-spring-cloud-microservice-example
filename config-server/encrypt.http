@@ -1,0 +1,11 @@
+POST localhost:8888/encrypt HTTP/1.1
+Authorization: Basic cm9vdDpzM2NyM3Q=
+
+localhost:3306
+
+###
+
+GET localhost:8888/catalog-service/default HTTP/1.1
+Authorization: Basic cm9vdDpzM2NyM3Q=
+
+###
